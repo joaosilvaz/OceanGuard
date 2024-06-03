@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 15px;
+    background-image: url("../Assets/fundo_body.jpg");
+    font-family: 'Open Sans', sans-serif;
+    backdrop-filter: blur(5px);
+    overflow-x: hidden;
+}
+
+body h1 {
+    float: left;
+    color: white;
+    border-bottom: solid 1px white;
+}
+
+body h1:hover {
+    background-color: white;
+    color: #0c4a6e;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+header {
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav i {
+    font-size: 30px;
+    color: white;
+}
+
+nav img {
+    width: 50%;
+}
+
+.menu {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    margin-left: 100%;
+    z-index: 1;
+}
+
+.menu img {
+    margin: 20px;
+    margin-left: 30px;
+    width: 50px;
+}
+
+.menu img:hover {
+    cursor: pointer;
+}
+
+.menu ul {
+    list-style-type: none;
+    text-decoration: none;
+    width: 50%;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.menu ul a {
+    text-decoration: none;
+}
+
+.menu ul li {
+    font-size: 35px;
+    color: white;
+}
+
+.menu ul li:hover {
+    color: #0ea5e9;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.secao1 {
+    background-image: linear-gradient(to right, white 0, white 60%, transparent 40%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: #0c4a6e;
+    height: 60vh;
+    width: 100vw;
+    border-radius: 15px;
+    border: white solid 1px;
+}
+
+#tartaruga {
+    width: 30vw;
+    filter: drop-shadow(2px 2px 2px black);
+}
+
+.secao1 p {
+    width: 25vw;
+    font-size: 20px;
+}
+
+.secao2 {
+    background-image: linear-gradient(to left, white 0, white 60%, transparent 40%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: #0c4a6e;
+    height: 60vh;
+    width: 100vw;
+    border-radius: 15px;
+    border: white 1px solid;
+}
+
+.secao2 p {
+    width: 30vw;
+    margin: 30px;
+}
+
+.secao3 {
+    background-image: linear-gradient(to right, white 0, white 60%, transparent 40%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: #0c4a6e;
+    height: 60vh;
+    width: 100vw;
+    border-radius: 15px;
+    border: white solid 1px;
+}
+
+.secao3 p {
+    width: 30vw;
+}
+
+.secao3 img {
+    width: 19vw;
+    margin-bottom: 5px;
+}
+
+.prototipo {
+    display: flex;
+    flex-direction: column;
+}
+
+.prototipo img {
+    width: 20vw;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border: white solid 2px;
+    border-radius: 15px;
+    bottom: 0;
+    width: 60%;
+    height: 100%;
+}
+
+footer img {
+    width: 250px;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer ul a {
+    text-decoration: none;
+    color: white;
+}
+
+footer ul a li {
+    margin-right: 20px;
+}
+
+footer ul a li:hover {
+    color: #0c4a6e;
+}
+
+.item-media-footer {
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    color: white;
+}
+
+.item-media-footer:hover {
+    background-color: white;
+    color: #0c4a6e;
+}
+
+.animado {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    animation: slidein 2s;
+    margin-left: 0%;
+}
+
+.animado img {
+    margin: 20px;
+    margin-left: 30px;
+    width: 50px;
+}
+
+.animado img:hover {
+    cursor: pointer;
+}
+
+.animado ul {
+    list-style-type: none;
+    text-decoration: none;
+    width: 50%;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.animado ul a {
+    text-decoration: none;
+}
+
+.animado ul li {
+    font-size: 35px;
+    color: white;
+}
+
+.animado ul li:hover {
+    color: #0ea5e9;
+}
+
+.slide-out {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    margin-left: 100%;
+    z-index: 1;
+    animation: slideout 1.5s;
+}
+
+.slide-out img {
+    margin: 20px;
+    margin-left: 30px;
+    width: 50px;
+}
+
+.slide-out img:hover {
+    cursor: pointer;
+}
+
+.slide-out ul {
+    list-style-type: none;
+    text-decoration: none;
+    width: 50%;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.slide-out ul a {
+    text-decoration: none;
+}
+
+.slide-out ul li {
+    font-size: 35px;
+    color: white;
+}
+
+.slide-out ul li:hover {
+    color: #0ea5e9;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+    }
+
+    to {
+        margin-left: 0%;
+    }
+}
+
+@keyframes slideout {
+    from {
+        margin-left: 0%;
+    }
+
+    to {
+        margin-left: 100%;
+    }
+}
+
+@media screen and (max-width: 940px) {
+
+    .secao1,
+    .secao3 {
+        display: flex;
+        flex-direction: column;
+        background-image: linear-gradient(to bottom, white 0, white 60%, transparent 40%);
+        height: 90vh;
+    }
+
+    .secao2 {
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        background-image: linear-gradient(to top, white 0, white 60%, transparent 40%);
+    }
+
+    .secao1 p,
+    .secao2 p,
+    .secao3 p {
+        width: 80vw;
+    }
+
+    #tartaruga,
+    .secao2 img,
+    .secao3 img {
+        width: 50vw;
+    }
+
+    footer img {
+        width: 45%;
+    }
+}
