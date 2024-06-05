@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 15px;
+    background-color: #082f49;
+    font-family: 'Open Sans', sans-serif;
+    backdrop-filter: blur(5px);
+}
+body h1 {
+    float: left;
+    color: white;
+    border-bottom: solid 1px white;
+}
+header {
+    width: 100%;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center ;
+    justify-content: space-around;
+}
+nav i {
+    font-size: 30px;
+    color: white;
+}
+nav img{
+    width: 50%;
+}
+.menu {
+    display: none;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.menu img {
+    margin: 20px;
+    margin-left: 30px;
+    width: 50px;
+}
+.menu img:hover {
+    cursor: pointer;
+}
+.menu ul {
+    list-style-type: none;
+    text-decoration: none;
+    width: 50%;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+.menu ul a {
+    text-decoration: none;
+}
+.menu ul li {
+    font-size: 35px;
+    color: white;
+}
+.menu ul li:hover {
+    color: #0ea5e9;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+form p {
+    color: white;
+    width: 70vw;
+}
+
+form input {
+    width: 40vw;
+    height: 10vh;
+    border-radius: 15px;
+}
+form button {
+    padding: 5px;
+    width: 15vw;
+    background-color: white;
+    color: #0c4a6e;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+form button:hover {
+    background-color: transparent;
+    color: white;
+    border: 1px white solid;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+section p {
+    color: white;
+}
+.email_contato {
+    background-color: white;
+    color: #0c4a6e;
+    padding: 15px;
+    border-radius: 15px;
+}
+.email_contato:hover {
+    background-color: #082f49;
+    color: white;
+    border: white 1px solid;
+}
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border: white solid 2px;
+    border-radius: 15px;
+    bottom: 0;
+    width: 80%;
+    height: 100%;
+}
+footer img {
+    width: 250px;
+}
+footer ul {
+    list-style-type: none;
+}
+footer ul a {
+    text-decoration: none;
+    color: white;
+}
+footer ul a li {
+    margin-right: 20px;
+}
+footer ul a li:hover {
+    border-bottom: white 1px solid;
+}
+.item-media-footer {
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    color: white;
+}
+.item-media-footer:hover {
+    background-color: white;
+    color: #0c4a6e;
+}
+.animado {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    animation: slidein 2s;
+    margin-left: 0%;
+}
+.animado img {
+    margin: 20px;
+    margin-left: 30px;
+    width: 50px;
+}
+.animado img:hover {
+    cursor: pointer;
+}
+.animado ul {
+    list-style-type: none;
+    text-decoration: none;
+    width: 50%;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+.animado ul a {
+    text-decoration: none;
+}
+.animado ul li {
+    font-size: 35px;
+    color: white;
+}
+.animado ul li:hover {
+    color: #0ea5e9;
+}
+.slide-out {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    margin-left: 100%;
+    z-index: 1;
+    animation: slideout 1.5s;
+}
+.slide-out img {
+    margin: 20px;
+    margin-left: 30px;
+    width: 50px;
+}
+.slide-out img:hover {
+    cursor: pointer;
+}
+.slide-out ul {
+    list-style-type: none;
+    text-decoration: none;
+    width: 50%;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+.slide-out ul a {
+    text-decoration: none;
+}
+.slide-out ul li {
+    font-size: 35px;
+    color: white;
+}
+.slide-out ul li:hover {
+    color: #0ea5e9;
+}
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+    }
+    to {
+        margin-left: 0%;
+    }
+}
+@keyframes slideout {
+    from {
+        margin-left: 0%;
+    }
+    to {
+        margin-left: 100%;
+    }
+}
+@media screen and (max-width:700px  ) {
+    footer img {
+        display: none;
+    }
+    form input {
+        width: 60vw;
+    }
+}
