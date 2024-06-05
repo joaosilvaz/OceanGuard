@@ -8,7 +8,7 @@ body {
     align-items: center;
     justify-content: space-around;
     gap: 15px;
-    background-image: url("../Assets/fundo_body.jpg");
+    background-color: #082f49;
     font-family: 'Open Sans', sans-serif;
     backdrop-filter: blur(5px);
     overflow-x: hidden;
@@ -20,12 +20,7 @@ body h1 {
     border-bottom: solid 1px white;
 }
 
-body h1:hover {
-    background-color: white;
-    color: #0c4a6e;
-    border-radius: 15px;
-    padding: 5px;
-}
+
 
 header {
     width: 100%;
@@ -83,7 +78,6 @@ nav img {
     font-size: 35px;
     color: white;
 }
-
 .menu ul li:hover {
     color: #0ea5e9;
 }
@@ -196,7 +190,7 @@ footer ul a li {
 }
 
 footer ul a li:hover {
-    color: #0c4a6e;
+    border-bottom: 1px white solid;
 }
 
 .item-media-footer {
