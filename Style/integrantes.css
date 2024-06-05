@@ -7,11 +7,10 @@ body{
     align-items: center;
     justify-content: space-around;
     gap: 15px;
-    background-image: url("../Assets/fundo_body.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
+    background-color: #082f49;
     font-family: 'Open Sans', sans-serif;
     backdrop-filter: blur(5px);
+    box-sizing: border-box;
 }
 body h1 {
     float: left;
@@ -28,7 +27,11 @@ nav {
     justify-content: space-around;
 }
 nav i {
+    font-size: 30px;
     color: white;
+}
+nav img{
+    width: 50%;
 }
 .menu {
     display: none;
@@ -76,6 +79,7 @@ section {
     padding: 20px;
     background-color: white;
     border-radius: 15px;
+    width: 20vw;
 }
 section img {
     width: 15vw;
@@ -130,7 +134,7 @@ footer {
     border: white solid 2px;
     border-radius: 15px;
     bottom: 0;
-    width: 60%;
+    width: 80%;
     height: 100%;
 }
 footer img {
@@ -146,6 +150,9 @@ footer ul a {
 footer ul a li {
     margin-right: 20px;
 }
+footer ul a li:hover {
+    border-bottom: 1px white solid;
+}
 .item-media-footer {
     border: 1px solid white;
     border-radius: 50%;
@@ -158,4 +165,102 @@ footer ul a li {
 .item-media-footer:hover {
     background-color: white;
     color: #0c4a6e;
+}
+.animado {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    animation: slidein 2s;
+    margin-left: 0%;
+}
+.animado img {
+    margin: 20px;
+    margin-left: 30px;
+    width: 50px;
+}
+.animado img:hover {
+    cursor: pointer;
+}
+.animado ul {
+    list-style-type: none;
+    text-decoration: none;
+    width: 50%;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+.animado ul a {
+    text-decoration: none;
+}
+.animado ul li {
+    font-size: 35px;
+    color: white;
+}
+.animado ul li:hover {
+    color: #0ea5e9;
+}
+.slide-out {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    margin-left: 100%;
+    z-index: 1;
+    animation: slideout 1.5s;
+}
+.slide-out img {
+    margin: 20px;
+    margin-left: 30px;
+    width: 50px;
+}
+.slide-out img:hover {
+    cursor: pointer;
+}
+.slide-out ul {
+    list-style-type: none;
+    text-decoration: none;
+    width: 50%;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+.slide-out ul a {
+    text-decoration: none;
+}
+.slide-out ul li {
+    font-size: 35px;
+    color: white;
+}
+.slide-out ul li:hover {
+    color: #0ea5e9;
+}
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+    }
+    to {
+        margin-left: 0%;
+    }
+}
+@keyframes slideout {
+    from {
+        margin-left: 0%;
+    }
+    to {
+        margin-left: 100%;
+    }
+}
+@media screen and (max-width: 640px){
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    section {
+        width: 100%;
+    }
+    footer img {
+        display: none;
+    }
 }
