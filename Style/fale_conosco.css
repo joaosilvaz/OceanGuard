@@ -73,13 +73,21 @@ form {
     align-items: center;
     justify-content: space-around;
     text-align: center;
+    gap: 5px;
+}
+form label {
+    color: white;
 }
 form p {
     color: white;
     width: 70vw;
 }
-
-form input {
+form input[type=email]{
+    width: 40vw;
+    border-radius: 15px;
+    padding: 7px;
+}
+form input[type=text] {
     width: 40vw;
     height: 10vh;
     border-radius: 15px;
