@@ -1,7 +1,9 @@
 # OceanGuard
 Um projeto para a Global Solution da Fiap 2024
 
-Monitoramento Inteligente de Ambientes Aquáticos 🌊
+# Monitoramento Inteligente de Ambientes Aquáticos 🌊
+
+
 Este projeto foi desenvolvido para oferecer monitoramento preciso e eficiente de ambientes aquáticos, auxiliando na conservação e manutenção da qualidade da água.
 
 🛠 Sobre o Projeto
