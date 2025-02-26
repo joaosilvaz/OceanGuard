@@ -1,4 +1,4 @@
-# OceanCare
+# OceanGuard
 Um projeto para a Global Solution da Fiap 2024
 
 Monitoramento Inteligente de Ambientes Aquáticos 🌊
